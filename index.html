@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alex Sanchez Heredia Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/3c0fc5d8f4.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container"> 
+            <nav>
+                <img src="logo.png" class="logo">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Specialist</p>
+                <h1>Hi, I'm <span>Alex</span><br> Sanchez Heredia</h1>
+            </div>
+        </div>
+    </div>
+    <!---------- About ------------>
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-column-1">
+                    <img src="user.jpeg" alt="Alex Sanchez Heredia">
+                </div>
+                <div class="about-column-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I'm 25 years old who has a knack for all web related things. In my free time I love to go to the climbing gym, play video games, play guitar, and go fishing. Currently completing some fun side missions in life, and will feature these excursions on this page.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Content</span><br>Content management systems</li>
+                            <li><span>Web Development</span><br>Designing web pages</li>
+                            <li><span>Web Analytics</span><br>Google Analytics 4/ SEO tools</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>2021 - Present</span><br>Digital Content Web Coordinator at BSI Group</li>
+                            <li><span>2019 - 2021</span><br>Content Hub Intern at DXC Technology</li>
+                            <li><span>2021</span><br>Product Specialist at Apple</li>
+                        </ul>
+                    </div> 
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021</span><br>BA Business Information Technology from Virginia Tech</li>
+                            <li><span>2016</span><br>Northern Virginia Community College</li>
+                            <li><span>2016</span><br>West Springfield High School</li>
+                        </ul>
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-------------------- Services ---------------------------->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-sitemap"></i>
+                    <h2>Web Content</h2>
+                    <p>Use CMS tools to manage different content and actions around the website overall. This can range from A/B testing to publishing webpages.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Development</h2>
+                    <p>Create, edit, maintain code for website design using the fundamental coding languages such as HTML, CSS, and Javascript.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-chart-simple"></i>
+                    <h2>Web Analytics</h2>
+                    <p>Pull qualitative and quantitative data for webpages using Google Analytics 4 and SEO tools such as LittleForest.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--------------------- Portfolio ----------------------->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="experts-corner.jpg" alt="work">
+                    <div class="layer">
+                        <h3>Experts Corner</h3>
+                        <p>Created and manage Experts Corner page for the consulting team at BSI. One single blog on the page created a $100,000 lead conversion for the team.</p>
+                        <a href="https://www.bsigroup.com/en-US/our-services/consulting/about/experts-corner/" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="stem-1.jpg" alt="work">
+                    <div class="layer">
+                        <h3>Running STEM activities for Rec-PAC summer campers</h3>
+                        <p>Led the DXC Summer Intern Project by collaborating with Rec-PAC and creating a STEM camp for the kids.</p>
+                        <a href="https://dxc.com/us/en/insights/perspectives/blogs/dxc-intern-volunteers-run-stem-activities-for-rec-pac-summer-cam" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="chatgpt.jpg" alt="work">
+                    <div class="layer">
+                        <h3>AI Web Analytics behind this page.</h3>
+                        <p>Used an AI oriented approach to pull data such as SEO ranking, web traffic, and bounce rate.</p>
+                        <a href="https://dxc.com/us/en/insights/perspectives/blogs/dxc-intern-volunteers-run-stem-activities-for-rec-pac-summer-cam" target="_blank" rel="noopener noreferrer"><i class="fa-solid fa-link"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="" class="btn">See more</a>
+        </div>
+    </div>
+<!----------------------- Contact Me ---------------------------->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fa-solid fa-envelope"></i><a href="mailto: alexsanchez117@gmail.com">alexsanchez117@gmail.com</a></p>
+                <p><i class="fa-solid fa-square-phone"></i><a href="tel:703-618-9627">703-618-9627</a></p>
+                <div class="social-icons">
+                    <a href="https://www.facebook.com/AlexSanchez117/"><i class="fa-brands fa-facebook"></i></a>
+                    <a href="https://www.instagram.com/sanchez_alex/?igshid=OGQ5ZDc2ODk2ZA%3D%3D"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="https://www.linkedin.com/in/alex-sanchez-heredia/"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/Bx3-Ale"><i class="fa-brands fa-github"></i></a>
+                </div>
+                <a href="Alex_Sanchez_Heredia_Resume.pdf" download target="_blank" rel="noopener noreferrer" class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+    <div class="copyright">
+        <p>Copyright © Alex Sanchez Heredia</p>
+    </div>
+</div>
+
+
+<script>
+    var tablinks = document.getElementsByClassName("tab-links")
+    var tabcontents = document.getElementsByClassName("tab-contents")
+
+    // Here we create a function to remove the class active when we click on it (including the one thats active)
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        //Here we add the class active link to display on click
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab")
+    }
+
+
+</script>
+
+<script>
+
+    var sidemenu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemenu.style.right = "0";
+    }
+    function closemenu(){
+        sidemenu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbzrRHrOqHHiMMuXIUY2CjQmpkD6fhe9TYUzd1JG6hcKU8BTGs_DaErfJkSZNSPSLFCqng/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message delivered successfully, Thanks!"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+
+</body>
+</html>
