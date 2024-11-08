@@ -61,15 +61,46 @@ header nav a.active {
 
 /* Image Comparison */
 .comparison-container {
-    margin: 20px 0;
-}
-
-.comparison {
+    margin: 20px auto;
+    max-width: 800px;
+    overflow: hidden;
     position: relative;
     width: 100%;
-    max-width: 800px; /* Limits maximum width */
-    margin: 0 auto;
 }
+
+.comparison-wrapper {
+    position: relative;
+    width: 100%;
+}
+
+.comparison-wrapper img {
+    display: block;
+    width: 100%;
+}
+
+.comparison-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 50%;
+    overflow: hidden;
+    height: 100%;
+}
+
+.comparison-overlay img {
+    width: 100%;
+}
+
+.comparison-slider {
+    position: absolute;
+    bottom: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 10;
+    width: 80%;
+    cursor: pointer;
+}
+
 
 .comparison img {
     width: 100%; /* Ensures images take the full container width */

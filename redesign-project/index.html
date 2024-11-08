@@ -32,11 +32,15 @@
 
         <!-- Image Comparison Slider -->
         <div class="comparison-container">
-            <div class="comparison">
-                <img src="example-1.png" alt="Before redesign" class="before">
-                <img src="example-2.png" alt="After redesign" class="after">
+            <div class="comparison-wrapper">
+                <div class="comparison-overlay">
+                    <img src="example-1.png" alt="Image Before">
+                </div>
+                <img src="example-2.png" alt="Image After">
+                <input type="range" min="0" max="100" value="50" class="comparison-slider">
             </div>
         </div>
+        
 
         <!-- Performance Metrics -->
         <div class="performance-metrics">
